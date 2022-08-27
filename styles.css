@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
 :root{
-    --primary-color:#2dd4bf ;
+    --primary-color: #0d9488;
+    
+    /* lighter otion - #2dd4bf */
 
 }
 body{
@@ -37,7 +39,7 @@ body{
  }
 
  hr {
-    margin: 3rem 0rem;
+    margin: 2rem 0rem;
  }
 
  .list-item-inline {
@@ -47,5 +49,15 @@ body{
 
  .list-non-bullet {
     list-style: none;
+ }
+
+ .navigation {
+    background-color: var(--primary-color);
+    color:white;
+ }
+
+ .navigation .link {
+    color: white;
+    float: right;
  }
 
