@@ -55,10 +55,19 @@ body{
  .navigation {
     background-color: var(--primary-color);
     color:white;
+
  }
 
  .navigation .link {
     color: white;
-    float: right;
+    
+ }
+
+ .navigation .nav-pills {
+    text-align: right;
+ }
+
+ .navigation .nav-brand {
+    font-weight: bold;
  }
 
