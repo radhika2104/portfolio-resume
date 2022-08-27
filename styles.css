@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
+:root{
+    --primary-color:#2dd4bf ;
+
+}
 body{
     font-family: 'Open Sans', sans-serif;
 }
@@ -12,4 +16,19 @@ body{
  .container-center{
     max-width: 600px;
     margin: auto;
+ } 
+
+ .link{
+    text-decoration: none;
  }
+
+ .link-primary {
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 0.5rem;
+ }
+ .link-secondary {
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+ }
+
