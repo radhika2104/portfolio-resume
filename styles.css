@@ -83,10 +83,11 @@ body{
 .hero .hero-heading {
     padding-top: 1rem;
     color: var(--dark-gray);
+    text-align: center;
 
 }
 
-.hero .hero-heading-inverted {
+.hero .header-heading-inverted {
     color: var(--primary-color);
     
 }
