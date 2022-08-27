@@ -2,7 +2,7 @@
 
 :root{
     --primary-color: #06b6d4;
-    
+    --dark-gray: #6b7280;
     /* lighter otion - #2dd4bf
     darker option - #0d9488 */
 
@@ -52,6 +52,10 @@ body{
     list-style: none;
  }
 
+ .navigation .nav-brand {
+    font-weight: bold;
+ }
+
  .navigation {
     background-color: var(--primary-color);
     color:white;
@@ -69,7 +73,20 @@ body{
     text-align: right;
  }
 
- .navigation .nav-brand {
-    font-weight: bold;
- }
 
+.hero .hero-img {
+    max-width: 350px;
+    margin: auto;
+    display: block;
+}
+
+.hero .hero-heading {
+    padding-top: 1rem;
+    color: var(--dark-gray);
+
+}
+
+.hero .hero-heading-inverted {
+    color: var(--primary-color);
+    
+}
