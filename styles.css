@@ -8,9 +8,30 @@
     darker option - #0d9488 */
 
 }
+
+.li-article-blog{
+    margin: 0rem 0rem 5rem 0rem;
+}
+
+.showcase-blog{
+    border-radius: 1rem;
+    text-align: center;
+    margin: 3rem auto;
+    padding: 2rem;
+}
+
+.margin-bt {
+    margin-bottom: 2rem;
+}
+
+.section .link {
+  
+    margin: 5rem 0.5rem 0rem 0.5rem;
+    
+}
 body{
     font-family: 'Open Sans', sans-serif;
-    margin: .4px;
+    margin: 0px .4px 0px 0.4px;
 }
 
  .container{
@@ -19,7 +40,12 @@ body{
  }
 
  .container-center{
-    max-width: 600px;
+    max-width: 650px;
+    margin: auto;
+ } 
+
+ .container-center-blog{
+    max-width: 850px;
     margin: auto;
  } 
 
@@ -30,6 +56,7 @@ body{
  .link{
     text-decoration: none;
     padding: 0.5rem 1rem;
+   
  }
 
  .link-active{
@@ -39,13 +66,13 @@ body{
  .link-primary {
     background-color: var(--primary-color);
     color: white;
-    border-radius: 0.5rem;
+    border-radius: 1rem;
     
  }
  .link-secondary {
     color: var(--primary-color);
     border: 1px solid var(--primary-color);
-    border-radius: 0.5rem;
+    border-radius: 1rem;
     
  }
 
@@ -108,12 +135,19 @@ body{
 
 .ow{
     background-color: var(--off-white);
+    margin: 1rem 5rem;
+    border-radius: 3rem;
 }
 
+
+
 .section {
-    padding: 2rem;
+    padding: 2rem 1rem 3rem 1rem;
     text-align: center;
+    font-size: large;
 }
+
+
 
 .footer .link {
     color: white;
@@ -124,6 +158,10 @@ body{
 
 .footer ul{
     display: inline;
+    padding-inline-start: 0px;
+}
+
+.ul-section{
     padding-inline-start: 0px;
 }
 
@@ -154,4 +192,17 @@ body{
 .footer .githublogo{
     width: 70px;
     position: relative; bottom: 5px;
+}
+
+@media (max-width:600px){
+    .ow{
+        background-color: var(--off-white);
+        margin: 1rem 0rem;
+        border-radius: 2rem;
+    }
+    .hero .hero-img {
+        max-width: 320px;
+        margin: auto;
+        display: block;
+    }
 }
