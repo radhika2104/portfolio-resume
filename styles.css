@@ -3,13 +3,14 @@
 :root{
     --primary-color: #06b6d4;
     --dark-gray: #6b7280;
-    --off-white: #d1d5db;
+    --off-white: #f3f4f6;
     /* lighter otion - #2dd4bf
     darker option - #0d9488 */
 
 }
 body{
     font-family: 'Open Sans', sans-serif;
+    margin: .4px;
 }
 
  .container{
@@ -22,9 +23,17 @@ body{
     margin: auto;
  } 
 
+ .margin-md {
+    margin: 4rem;
+ }
+
  .link{
     text-decoration: none;
     padding: 0.5rem 1rem;
+ }
+
+ .link-active{
+    font-weight: bold;
  }
 
  .link-primary {
@@ -46,7 +55,7 @@ body{
 
  .list-item-inline {
     display: inline;
-    padding: 0rem 0.5rem;
+    padding: 0rem 0.5rem 0rem 0rem;
  }
 
  .list-non-bullet {
@@ -55,13 +64,17 @@ body{
 
  .navigation .nav-brand {
     font-weight: bold;
+    font-size: large;
+
  }
 
  .navigation {
     background-color: var(--primary-color);
     color:white;
     padding: 1rem;
-    border-bottom-left-radius: 1rem;
+    border-bottom-left-radius: 2rem;    
+    font-weight: 500;
+    font-size: large;
 
  }
 
@@ -102,4 +115,43 @@ body{
     text-align: center;
 }
 
+.footer .link {
+    color: white;
+    text-decoration: none;
+    display: inline;
+    
+}
 
+.footer ul{
+    display: inline;
+    padding-inline-start: 0px;
+}
+
+.footer {
+    color: white;
+    background-color: var(--primary-color);
+    padding: 1rem;
+    text-align: center;
+    border-top-right-radius: 2rem;
+}
+
+.footer-header {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    font-weight: bold;
+    font-size: large;
+}
+
+
+.footer .linkedinlogo{
+    width: 60px;
+}
+
+.footer .twitterlogo{
+    width: 50px;
+}
+
+.footer .githublogo{
+    width: 70px;
+    position: relative; bottom: 5px;
+}
