@@ -10,6 +10,10 @@
 
 }
 
+.mark-headers{
+    color: var(--primary-color);
+}
+
 .main-stack-container{
     max-width: 1000px;
     display: inline-block;
