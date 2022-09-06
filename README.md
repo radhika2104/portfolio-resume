@@ -1,39 +1,29 @@
 # Portfolio Website
 
-Created portfolio website to showcase projects and blogs build in Neog camp, levelZero.
+Created portfolio website to showcase projects and blogs built in Neog camp, levelZero.
+In this assignment, I created a portfolio website for markThree, markFour and markFive.
 
-In this assignment, I learned HTML and CSS to execute components library and create a portfolio website for markFour and markFive.
+- Bonus Features: learned progress bars and making portofolio responsive
+- Bonus Features: added Blogs
 
-# Speak Na'vi 
-
-This is a project created in Neo G camp, LevelZero for markSeven.
-
-Na'vi is a constructed language spoken by the Na'vi people in the fictional world Pandora in James Cameron's blockbuster movie Avatar. 
-
-## Features
-
-- app takes in input and translates the input into Navi
-- Bonus Features: app is responsive, background gifs changes with different mobile width for width coverage
-
-## Limitations
-
-- app usage is limited to 5 API calls per hour
 
 ## Learnings
 
-- client-server architecture and making network calls to API to get output
-- HTTP POST, GET, DELETE methods
-- using POSTMAN to test API calls
-- DOM and accessing properties of DOM
-- using FETCH for async calls to server and concept of promise
+- Git/Github
+- hosting website
+- learned HTML and CSS to execute components library
+- semantic HTML
+- CSS selectors and box model
+- creating blogs
+
 
 ## Tech stack Used
 
-HTML, CSS and Javascript.
+HTML and CSS
 
 ## URL for App
 
-URL - https://fun-triangles-radhika.netlify.app/
+URL - https://portfolio-radhika.netlify.app/
 
 This app is hosted using netlify.
-API used for translations - https://api.funtranslations.com/
+

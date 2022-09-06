@@ -4,9 +4,43 @@
     --primary-color: #06b6d4;
     --dark-gray: #6b7280;
     --off-white: #f3f4f6;
+    --light-primary:#bae6fd;
     /* lighter otion - #2dd4bf
     darker option - #0d9488 */
 
+}
+
+.main-stack-container{
+    max-width: 1000px;
+    display: inline-block;
+    margin: 0rem auto 0rem auto;
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: space-around;
+   
+}
+
+.stacks{
+    
+    max-width: max-content;
+    margin: 1rem 1rem 1rem 1rem;
+    display: inline;
+    text-align: right;
+    display: inline-block;
+    
+}
+
+.progress-bars{
+    background-color: var(--light-primary);
+    border-radius: 2px;
+    color: white;
+    
+}
+
+.progress-bars::-webkit-progress-value {
+     background: var(--primary-color); 
+     color: white;
 }
 
 .emojis{
@@ -201,6 +235,24 @@ body{
 
 @media (min-width:370px) and (max-width:600px){
 
+    .main-stack-container{
+        display: inline-block;
+        margin: 0rem 1rem 0rem 1rem;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+       
+    }
+    
+    .stacks{
+        
+        max-width: max-content;
+        margin: 1rem 1rem 1rem 1rem;
+        display: inline;
+        text-align: right;
+        display: inline-block;
+    }    
+
     .hero .hero-heading {
         padding-top: 1rem;
         color: var(--dark-gray);
@@ -259,6 +311,25 @@ body{
 
 @media (min-width:290px) and (max-width:370px){
 
+    .main-stack-container{
+        display: inline-block;
+        margin: 0rem 1rem 0rem 1rem;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center;
+        flex-wrap: wrap; */
+       
+    }
+    
+    .stacks{
+        
+        max-width: max-content;
+        margin: 1rem 1rem 1rem 1rem;
+        display: inline;
+        text-align: right;
+        display: inline-block;
+    }   
+
     .hero .hero-heading {
         padding-top: 1rem;
         color: var(--dark-gray);
@@ -315,6 +386,25 @@ body{
 }
 
 @media (max-width:289px) {
+
+    .main-stack-container{
+        display: inline-block;
+        margin: 0rem 1rem 0rem 1rem;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center;
+        flex-wrap: wrap; */
+       
+    }
+    
+    .stacks{
+        
+        max-width: max-content;
+        margin: 1rem 1rem 1rem 1rem;
+        display: inline;
+        text-align: right;
+        display: inline-block;
+    }   
 
     .hero .hero-heading {
         padding-top: 1rem;
