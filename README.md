@@ -12,6 +12,6 @@
 
 ## URL for App
 
-URL - https://portfolio-radhika.netlify.app/
+URL - https://radhika-portfolio-resume.netlify.app/
 
 This app is hosted using netlify.
