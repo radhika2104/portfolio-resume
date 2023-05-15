@@ -31,7 +31,7 @@
 .main-stack-container {
   max-width: 1000px;
   display: inline-block;
-  margin: 0rem auto 0rem auto;
+  margin: 1rem auto 0rem auto;
   display: flex;
   /* flex-direction: column; */
   flex-wrap: wrap;
@@ -284,7 +284,8 @@ hr {
   color: white;
   background-color: var(--primary-color);
   padding: 1rem;
-  padding-top: 2rem;
+  padding-top: 3rem;
+  margin-top: 3rem;
   text-align: center;
   border-top-right-radius: 1.8rem;
 }
@@ -296,7 +297,7 @@ hr {
   font-size: large;
 }
 
-.footer .linkedinlogo {
+/* .footer .linkedinlogo {
   width: 60px;
 }
 
@@ -308,6 +309,79 @@ hr {
   width: 70px;
   position: relative;
   bottom: 5px;
+} */
+
+.wrapper .button {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  margin: 0 5px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-out;
+}
+
+.wrapper .button:hover {
+  width: 200px;
+}
+
+.wrapper .button .icon {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+
+.wrapper .button:nth-child(1):hover .icon {
+  background: #0e76a8;
+}
+
+.wrapper .button:nth-child(2):hover .icon {
+  background: #211f1f;
+}
+
+.wrapper .button:nth-child(3):hover .icon {
+  background: #1da1f2;
+}
+.wrapper .button .icon i {
+  font-size: 25px;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+  color: black;
+}
+
+.wrapper .button:hover .icon i {
+  color: #fff;
+}
+.wrapper .button a {
+  text-decoration: none;
+}
+
+.wrapper .button span {
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  line-height: 50px;
+  transition: all 0.3s ease-out;
+}
+
+.wrapper .button:nth-child(1) span {
+  color: #0e76a8;
+}
+
+.wrapper .button:nth-child(2) span {
+  color: #211f1f;
+}
+
+.wrapper .button:nth-child(3) span {
+  color: #1da1f2;
 }
 
 @media (min-width: 370px) and (max-width: 600px) {
