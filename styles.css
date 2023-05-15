@@ -531,7 +531,8 @@ hr {
     flex-direction: column;
 
     flex-wrap: nowrap;
-    padding-right: 0rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     text-align: center;
     font-size: 1rem;
     font-weight: 500;
@@ -632,7 +633,8 @@ hr {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    padding-right: 0rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     text-align: center;
     font-size: 1rem;
     font-weight: 500;
@@ -723,9 +725,10 @@ hr {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    padding-right: 0rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 
-    text-align: right;
+    text-align: center;
     font-size: 1rem;
     font-weight: 500;
     display: flex;
