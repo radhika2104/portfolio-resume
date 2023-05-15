@@ -426,6 +426,7 @@ hr {
   #main-profile .intro-container {
     margin-top: 2rem;
     text-align: center;
+    min-width: 20rem;
   }
   #main-profile .intro-container h1 {
     margin: auto;
@@ -446,11 +447,39 @@ hr {
   }
   #main-profile .about-me-div {
     font-weight: bold;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
+  }
+
+  .hero .hero-img {
+    /* max-width: 400px; */
+    /* margin: auto; */
+    /* display: block; */
+    margin-right: 0rem;
+    /* width: 300px;
+    border-radius: 50rem;
+    box-shadow: 0px 0px 5px 1px var(--off-white); */
+  }
+  /* #main-profile {
+    display: flex;
+  
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  } */
+
+  .intro-container {
+    /* display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start; */
+    min-width: 20rem;
   }
   .navigation .nav-pills {
     display: flex;
     flex-direction: column;
+
     flex-wrap: nowrap;
     padding-right: 0rem;
     text-align: center;
@@ -458,6 +487,10 @@ hr {
     font-weight: 500;
     display: flex;
     flex-wrap: wrap;
+  }
+
+  .navigation .nav-pills .list-item-inline {
+    margin-bottom: 0.5rem;
   }
 
   .stacks {
@@ -475,7 +508,7 @@ hr {
   body {
     /* font-family: "Open Sans", sans-serif; */
     margin: 0px auto 0px auto;
-    min-width: 140vw;
+    min-width: 100vw;
   }
   .ow {
     background-color: var(--off-white);
@@ -485,7 +518,6 @@ hr {
   .hero .hero-img {
     max-width: 320px;
     margin: auto;
-
     display: block;
   }
   .footer {
@@ -507,14 +539,26 @@ hr {
     font-size: large;
     min-width: 95vw;
     gap: 0%;
+    justify-content: space-between;
   }
 
   .section {
     margin-left: 0.6rem;
     margin-right: auto;
-    padding: 2rem 1rem 3rem 1rem;
+    padding: 2rem 1rem 2rem 1rem;
     text-align: center;
     font-size: large;
+    max-width: 90%;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 480px) {
+  #main-profile .about-me-div {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  .navigation {
+    gap: 0%;
   }
 }
 /* comment out and see responsiveness okay till 400px */
@@ -529,6 +573,10 @@ hr {
     font-weight: 500;
     display: flex;
     flex-wrap: wrap;
+  }
+  #main-profile .about-me-div {
+    font-weight: bold;
+    font-size: 1.2rem;
   }
 
   .navigation .nav-pills .list-item-inline {
@@ -558,7 +606,7 @@ hr {
   body {
     /* font-family: "Open Sans", sans-serif; */
     margin: 0px auto 0px auto;
-    min-width: 135vw;
+    min-width: 100vw;
   }
   .ow {
     background-color: var(--off-white);
@@ -588,6 +636,7 @@ hr {
     font-weight: 500;
     font-size: large;
     min-width: 95vw;
+    gap: 0%;
   }
 
   .section {
