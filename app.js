@@ -1,7 +1,7 @@
 const roles = [
   "Fashion Buyer turned Software Developer..",
-  "Reader..",
   "Fitness Enthusiast..",
+  "Reader..",
   "Nature lover..",
 ];
 
@@ -53,11 +53,11 @@ function clearRole(role) {
 printRole(roles[roleIndex]);
 
 // header position static till 'about me' section , sticky after that
-window.addEventListener("scroll", function () {
-  let intro = this.document.getElementById("main-profile");
-  if (this.window.scrollY >= intro.offsetHeight + intro.offsetTop) {
-    this.document.querySelector(".navigation").style.position = "sticky";
-  } else {
-    this.document.querySelector(".navigation").style.position = "revert";
-  }
-});
+// window.addEventListener("scroll", function () {
+//   let intro = this.document.getElementById("main-profile");
+//   if (this.window.scrollY >= intro.offsetHeight + intro.offsetTop) {
+//     this.document.querySelector(".navigation").style.position = "sticky";
+//   } else {
+//     this.document.querySelector(".navigation").style.position = "revert";
+//   }
+// });
