@@ -44,18 +44,18 @@ body.dark-theme {
     --text-color: #171717;
     --bg-color: white;
   }
-
-  
 }
 
-.theme-icon{
-    width: 2rem;
-   
+.theme-icon {
+  width: 1.5rem;
 }
-.theme-icon-btn{
-    background-color: var(--primary-color);
-    border: none;
-    border-color: var(--primary-color);
+.theme-icon-btn:hover {
+  cursor: pointer;
+}
+.theme-icon-btn {
+  background-color: var(--primary-color);
+  border: none;
+  border-color: var(--primary-color);
 }
 .home-body-container {
   background-color: var(--primary-color);
@@ -164,7 +164,7 @@ body {
 
 .link-primary:hover {
   background-color: var(--purple);
-  #ecdff5
+
   transition: all 0.3s ease-out;
   box-shadow: 0px 10px 10px var(--light-purple);
 }
@@ -242,7 +242,9 @@ hr {
   font-weight: 400;
   font-size: large;
   display: flex;
-  gap: 18%;
+  justify-content: space-between;
+
+  /* gap: 18%; */
 }
 
 .navigation .nav-pills {
@@ -482,6 +484,10 @@ hr {
 }
 
 @media (min-width: 370px) and (max-width: 650px) {
+  .theme-icon-btn {
+    align-self: flex-start;
+    margin-top: 0.8rem;
+  }
   .main-stack-container {
     display: inline-block;
     margin: 0rem 1rem 0rem 1rem;
@@ -577,13 +583,15 @@ hr {
     background-color: var(--primary-color);
     color: var(--base-color2);
     padding: 1rem;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
     border-bottom-left-radius: 2rem;
     font-weight: 500;
     font-size: large;
     min-width: 95vw;
     gap: 0%;
     justify-content: space-between;
+    /* border-bottom: 2px outset var(--light-primary); */
+    box-shadow: 0px 2px 2px var(--light-primary);
   }
 
   .section {
@@ -603,10 +611,15 @@ hr {
   }
   .navigation {
     gap: 0%;
+    box-shadow: 0px 2px 2px var(--light-primary);
   }
 }
 /* comment out and see responsiveness okay till 400px */
 @media (min-width: 290px) and (max-width: 400px) {
+  .theme-icon-btn {
+    align-self: flex-start;
+    margin-top: 0.8rem;
+  }
   .navigation .nav-pills {
     display: flex;
     flex-direction: column;
@@ -681,6 +694,7 @@ hr {
     font-size: large;
     min-width: 95vw;
     gap: 0%;
+    box-shadow: 0px 2px 2px var(--light-primary);
   }
 
   .section {
@@ -774,6 +788,7 @@ hr {
     font-weight: 500;
     font-size: large;
     min-width: 95vw;
+    box-shadow: 0px 2px 2px var(--light-primary);
   }
 
   .section {
