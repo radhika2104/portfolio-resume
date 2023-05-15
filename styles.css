@@ -4,13 +4,16 @@
   --primary-color: #22d3ee;
   --slight-primary-color: #5fdaed;
   --dark-gray: #6b7280;
-  --off-white: #f9fafb;
+  --base-color: #f9fafb;
+  --base-color2: white;
+  --text-color: #171717;
   --light-primary: #bae6fd;
   --purple: #7027a0;
   --light-purple: #d9b3f2;
   --blue: #0014ff;
   --stark-bp: #5800ff;
   --dark-primary: #0f545e;
+  --bg-color: white;
   /* original dark-primary: #0f545e; */
   /* original dark-gray: #6b7280; */
   /* original ow:#f3f4f6 */
@@ -20,6 +23,40 @@
     darker option - #0d9488 */
 }
 
+body.dark-theme {
+  --base-color: #171717;
+  --base-color2: #171717;
+  --text-color: #f9fafb;
+  --bg-color: #262626;
+}
+/* temp placed here place at end */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --base-color: #171717;
+    --base-color2: #171717;
+    --text-color: #f9fafb;
+    --bg-color: #262626;
+  }
+
+  body.light-theme {
+    --base-color: #f9fafb;
+    --base-color2: white;
+    --text-color: #171717;
+    --bg-color: white;
+  }
+
+  
+}
+
+.theme-icon{
+    width: 2rem;
+   
+}
+.theme-icon-btn{
+    background-color: var(--primary-color);
+    border: none;
+    border-color: var(--primary-color);
+}
 .home-body-container {
   background-color: var(--primary-color);
 }
@@ -49,12 +86,12 @@
 .progress-bars {
   background-color: var(--light-primary);
   border-radius: 2px;
-  color: white;
+  color: var(--base-color2);
 }
 
 .progress-bars::-webkit-progress-value {
   background: var(--primary-color);
-  color: white;
+  color: var(--base-color2);
 }
 
 .emojis {
@@ -84,6 +121,8 @@ body {
   /* font-family: "Jost", sans-serif; */
   font-family: "Wix Madefor Display", sans-serif;
   margin: 0px 0.4px 0px 0.4px;
+  color: var(--text-color);
+  background-color: var(--bg-color);
 }
 
 .container {
@@ -118,13 +157,14 @@ body {
 
 .link-primary {
   background-color: var(--primary-color);
-  color: white;
+  color: var(--base-color2);
   border-radius: 1rem;
   box-shadow: 0px 10px 10px var(--light-primary);
 }
 
 .link-primary:hover {
   background-color: var(--purple);
+  #ecdff5
   transition: all 0.3s ease-out;
   box-shadow: 0px 10px 10px var(--light-purple);
 }
@@ -144,11 +184,11 @@ body {
 }
 
 .navigation .link {
-  color: white;
+  color: var(--base-color2);
 }
 
 .navigation .link:hover {
-  color: white;
+  color: var(--base-color2);
   background-color: var(--purple);
   border: var(--light-primary);
   border-radius: 0.4rem;
@@ -182,7 +222,7 @@ hr {
   color: var(--purple);
 }
 .navigation .nav-brand .link:hover {
-  color: white;
+  color: var(--base-color2);
   background-color: var(--purple);
   border: var(--light-primary);
   border-radius: 0.4rem;
@@ -195,7 +235,7 @@ hr {
 
 .navigation {
   background-color: var(--primary-color);
-  color: white;
+  color: var(--base-color2);
   padding: 1rem;
   padding-bottom: 2rem;
   border-bottom-left-radius: 1.8rem;
@@ -220,7 +260,7 @@ hr {
   margin-right: 2rem;
   width: 300px;
   border-radius: 50rem;
-  box-shadow: 0px 0px 5px 1px var(--off-white);
+  box-shadow: 0px 0px 5px 1px var(--base-color);
 }
 #main-profile {
   display: flex;
@@ -250,7 +290,7 @@ hr {
 .hero .hero-heading {
   /* padding-top: 1rem; */
   margin: 0;
-  color: white;
+  color: var(--base-color2);
   text-align: left;
 }
 
@@ -259,7 +299,7 @@ hr {
 }
 
 .ow {
-  background-color: var(--off-white);
+  background-color: var(--base-color);
   margin: 1rem 5rem;
   border-radius: 3rem;
 }
@@ -271,7 +311,7 @@ hr {
 }
 
 .footer .link {
-  color: white;
+  color: var(--base-color2);
   text-decoration: none;
   display: inline;
 }
@@ -286,7 +326,7 @@ hr {
 }
 
 .footer {
-  color: white;
+  color: var(--base-color2);
   background-color: var(--primary-color);
   padding: 1rem;
   padding-top: 3rem;
@@ -407,6 +447,10 @@ hr {
 
 .sub-hero .sub-header-heading-inverted {
   color: var(--purple);
+  text-shadow: 0.5px 0 var(--text-color), -0.5px 0 var(--text-color),
+    0 0.5px var(--text-color), 0 -0.5px var(--text-color),
+    0px 0px var(--text-color), -0px -0px var(--text-color),
+    0px -0px var(--text-color), -0px 0px var(--text-color);
 }
 #main-profile .about-me-div {
   font-weight: bold;
@@ -457,7 +501,7 @@ hr {
     margin-right: 0rem;
     /* width: 300px;
     border-radius: 50rem;
-    box-shadow: 0px 0px 5px 1px var(--off-white); */
+   */
   }
   /* #main-profile {
     display: flex;
@@ -511,7 +555,7 @@ hr {
     min-width: 100vw;
   }
   .ow {
-    background-color: var(--off-white);
+    background-color: var(--base-color);
     margin: 1rem 0rem;
     border-radius: 2rem;
   }
@@ -521,7 +565,7 @@ hr {
     display: block;
   }
   .footer {
-    color: white;
+    color: var(--base-color2);
     background-color: var(--primary-color);
     padding: 1rem;
     text-align: center;
@@ -531,7 +575,7 @@ hr {
 
   .navigation {
     background-color: var(--primary-color);
-    color: white;
+    color: var(--base-color2);
     padding: 1rem;
     padding-bottom: 2rem;
     border-bottom-left-radius: 2rem;
@@ -609,7 +653,7 @@ hr {
     min-width: 100vw;
   }
   .ow {
-    background-color: var(--off-white);
+    background-color: var(--base-color);
     margin: 1rem 0rem;
     border-radius: 2rem;
   }
@@ -619,7 +663,7 @@ hr {
     display: block;
   }
   .footer {
-    color: white;
+    color: var(--base-color2);
     background-color: var(--primary-color);
     padding: 1rem;
     text-align: center;
@@ -629,7 +673,7 @@ hr {
 
   .navigation {
     background-color: var(--primary-color);
-    color: white;
+    color: var(--base-color2);
     padding: 1rem;
     padding-bottom: 2rem;
     border-bottom-left-radius: 2rem;
@@ -702,7 +746,7 @@ hr {
     min-width: 200vw;
   }
   .ow {
-    background-color: var(--off-white);
+    background-color: var(--base-color);
     margin: 1rem 0rem;
     border-radius: 2rem;
   }
@@ -713,7 +757,7 @@ hr {
   }
 
   .footer {
-    color: white;
+    color: var(--base-color2);
     background-color: var(--primary-color);
     padding: 1rem;
     padding-top: 2rem;
@@ -724,7 +768,7 @@ hr {
 
   .navigation {
     background-color: var(--primary-color);
-    color: white;
+    color: var(--base-color2);
     padding: 1rem;
     border-bottom-left-radius: 2rem;
     font-weight: 500;
